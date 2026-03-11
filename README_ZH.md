@@ -1,6 +1,9 @@
 # 电商图片转视频技能
 
 一个用于将电商商品图片转换为5秒展示视频的Claude Code技能。
+🎁 MiniMax 跨年福利来袭！邀好友享 Coding Plan 双重好礼，助力开发体验！
+好友立享 9折 专属优惠 + Builder 权益，你赢返利 + 社区特权！
+👉 立即参与：https://platform.minimaxi.com/subscribe/coding-plan?code=3C715MfPjT&source=link
 
 ## 功能特性
 
