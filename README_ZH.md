@@ -37,12 +37,18 @@
 ### 1. 配置MiniMax MCP
 
 在MCP配置中添加：
-
+编辑配置文件 ~/.claude.json，添加以下 MCP 配置：
 ```json
 {
-  "MiniMax": {
-    "command": "npx",
-    "args": ["-y", "@aisui/mcp-minimax-coding"]
+  "mcpServers": {
+    "MiniMax": {
+      "command": "uvx",
+      "args": ["minimax-coding-plan-mcp", "-y"],
+      "env": {
+        "MINIMAX_API_KEY": "MINIMAX_API_KEY",
+        "MINIMAX_API_HOST": "https://api.minimaxi.com"
+      }
+    }
   }
 }
 ```
@@ -52,12 +58,18 @@
 在MCP配置中添加：
 
 ```json
-{
-  "doubao-giv": {
-    "command": "npx",
-    "args": ["-y", "@aisui/mcp-doubao-giv"]
-  }
-}
+"doubao-giv": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "doubao-image-video-mcp@latest"
+      ],
+      "env": {
+        "DOUBAO_API_KEY": "APIKEY",
+        "DOUBAO_IMAGE_ENDPOINT_ID": "ep-xxxxxxxxxx",
+        "DOUBAO_VIDEO_ENDPOINT_ID": "ep-xxxxxxxxx"
+      }
+    }
 ```
 
 ### 3. 配置Claude Code
